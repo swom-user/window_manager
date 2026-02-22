@@ -366,10 +366,10 @@ class WindowManager {
     );
 
     return Rect.fromLTWH(
-      resultData['x'],
-      resultData['y'],
-      resultData['width'],
-      resultData['height'],
+      (resultData['x'] as num?)?.toDouble() ?? 0.0,
+      (resultData['y'] as num?)?.toDouble() ?? 0.0,
+      (resultData['width'] as num?)?.toDouble() ?? 1280.0,
+      (resultData['height'] as num?)?.toDouble() ?? 720.0,
     );
   }
 
