@@ -287,7 +287,7 @@ public class WindowManager: NSObject, NSWindowDelegate {
         if (animate) {
             mainWindow.animator().setFrame(frameRect, display: true, animate: true)
         } else {
-            mainWindow.setFrame(frameRect, display: true)
+            mainWindow.setFrame(frameRect, display: false)
         }
     }
     
